@@ -14,7 +14,11 @@ export const TableCard = ({ filteredData, loading }: ResponsiveTableCardProps) =
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(paginationConfig.defaultPageSize ?? 10);
 
-  const pageItems = filteredData.slice((page - 1) * pageSize, page * pageSize);
+  const totalPages = Math.max(1, Math.ceil(filteredData.length / pageSize));
+  const currentPage = Math.min(page, totalPages);
+  const start = (currentPage - 1) * pageSize;
+  const end = currentPage * pageSize;
+  const pageItems = filteredData.slice(start, end);
 
   if (loading) return <Spin className="block mx-auto" />;
 

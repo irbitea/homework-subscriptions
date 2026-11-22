@@ -1,10 +1,12 @@
 import type { PaginationProps } from 'antd';
 
+export type SubscriptionStatus = 'active' | 'expired' | 'suspended';
+
 export interface Subscription {
   id: string;
   customerName: string;
   productName: string;
-  status: 'active' | 'expired' | 'suspended';
+  status: SubscriptionStatus;
   quantity: number;
   monthlyCost: number;
   renewalDate: string;

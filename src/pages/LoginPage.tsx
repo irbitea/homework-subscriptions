@@ -21,7 +21,7 @@ export const LoginPage = () => {
       return;
     }
 
-    form.setFields([{ name: 'password', value: '', errors: ['Invalid username or password'] }]);
+    form.setFields([{ name: 'password', value: '', errors: ['Invalid email or password'] }]);
   };
 
   return (

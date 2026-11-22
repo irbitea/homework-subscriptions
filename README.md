@@ -13,8 +13,8 @@ npm run dev
 
 Open http://localhost:5173 and log in with the demo user:
 
-| Email | Password |
-|---|---|
+| Email                   | Password      |
+| ----------------------- | ------------- |
 | `ted.mosby@example.com` | `password123` |
 
 ## Features

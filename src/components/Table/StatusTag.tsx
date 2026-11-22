@@ -1,14 +1,14 @@
 import { Tag } from 'antd';
-import type { Subscription } from '../../types';
+import type { SubscriptionStatus } from '../../types';
 
-const statusStyle = {
+const statusStyle: Record<SubscriptionStatus, string> = {
   active: 'green',
   suspended: 'gold',
   expired: 'red',
 };
 
 interface StatusTagProps {
-  status: Subscription['status'];
+  status: SubscriptionStatus;
 }
 
 export const StatusTag = ({ status }: StatusTagProps) => {

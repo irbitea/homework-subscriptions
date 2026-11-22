@@ -1,5 +1,5 @@
 import { Grid, Table, type TableProps } from 'antd';
-import { paginationConfig, type Subscription } from '../../types';
+import { paginationConfig, type Subscription, type SubscriptionStatus } from '../../types';
 import { TableCard } from './TableCard';
 import { StatusTag } from './StatusTag';
 import { formatCurrency, formatDate } from '../../format';
@@ -33,7 +33,7 @@ export const SubscriptionTable = ({ data, loading }: SubscriptionTableProps) => 
       title: 'Status',
       dataIndex: 'status',
       key: 'status',
-      render: (status: Subscription['status']) => <StatusTag status={status} />,
+      render: (status: SubscriptionStatus) => <StatusTag status={status} />,
     },
     {
       title: 'Quantity',

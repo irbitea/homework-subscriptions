@@ -1,10 +1,10 @@
-export type User = {
+interface User {
   email: string;
   password?: string;
   name: string;
-};
+}
 
-const DEMO_USER: User = {
+export const DEMO_USER: User = {
   email: 'ted.mosby@example.com',
   password: 'password123',
   name: 'Ted Mosby',
