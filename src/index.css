@@ -1,0 +1,6 @@
+@layer theme, base, antd, components, utilities;
+@import 'tailwindcss';
+
+@utility bg-login-panel {
+  background-image: linear-gradient(to bottom, #bfe0bf, #d8ecd8, #eef7ee);
+}

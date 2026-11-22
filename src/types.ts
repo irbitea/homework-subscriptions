@@ -1,0 +1,17 @@
+import type { PaginationProps } from 'antd';
+
+export interface Subscription {
+  id: string;
+  customerName: string;
+  productName: string;
+  status: 'active' | 'expired' | 'suspended';
+  quantity: number;
+  monthlyCost: number;
+  renewalDate: string;
+}
+
+export const paginationConfig: PaginationProps = {
+  showSizeChanger: true,
+  defaultPageSize: 30,
+  pageSizeOptions: [10, 30, 50],
+};
