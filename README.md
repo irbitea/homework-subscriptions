@@ -25,6 +25,12 @@ Open http://localhost:5173 and log in with the demo user:
 - Responsive: table on desktop, card list on mobile
 - Loading and error states
 
+## Run unit tests
+
+```bash
+npm run test
+```
+
 ## Tech stack
 
 React 19, TypeScript, Vite, Ant Design, Tailwind CSS, TanStack Query, React Router.
